@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>Responsive Touch Slider Using Html CSS & Swiper.js</title>
+    <link rel="shortcut icon" href="./Images/SliderIcon.ico" type="image/x-icon">
+
+    <link rel='stylesheet' type='text/css' media='screen' href='./swiper.min.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./style.css'>
+</head>
+
+<body>
+    <h1 class="slider-H">SLIDER</h1>
+    <!-- Swiper -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="./Images/00.jpg" alt="Product">
+                </div>
+                <div class="details">
+                    <h3>Fossil Black Brown<br />
+                        <br />
+                        <span>1500 Rs</span></h3>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="./Images/01.jpg" alt="Product">
+                </div>
+                <div class="details">
+                    <h3>Fossil Silver Brown<br />
+                        <br />
+                        <span>1400 Rs</span></h3>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="./Images/02.jpg" alt="Product">
+                </div>
+                <div class="details">
+                    <h3>Fossil Golden Blue<br />
+                        <br />
+                        <span>1300 Rs</span></h3>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="./Images/03.jpg" alt="Product">
+                </div>
+                <div class="details">
+                    <h3>Smart Watch<br />
+                        <br />
+                        <span>5000 Rs</span>
+                    </h3>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="./Images/04.jpg" alt="Product">
+                </div>
+                <div class="details">
+                    <h3>Relish Black<br />
+                        <br />
+                        <span>1200 Rs</span></h3>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="./Images/05.jpg" alt="Product">
+                </div>
+                <div class="details">
+                    <h3>Fossil Black & Blue
+                        <br />
+                        <br />
+                        <span>970 Rs</span>
+                    </h3>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="./Images/07.jpg" alt="Product">
+                </div>
+                <div class="details">
+                    <h3>Apple Watch
+                        <br />
+                        <br />
+                        <span>26000 Rs</span>
+                    </h3>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="./Images/06.jpg" alt="Product">
+                </div>
+                <div class="details">
+                    <h3>Seiko 5 Silver<br />
+                        <br />
+                        <span>6000 Rs</span></h3>
+                </div>
+            </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <script type="text/JavaScript" src="./swiper.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            initialSlide: 3,
+            effect: 'coverflow', // 'slide', 'fade', 'cube', 'flip'
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            speed: 500,
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 400,
+                modifier: 1,
+                slideShadows: true,
+            },
+            direction: 'horizontal',
+            pagination: {
+                el: '.swiper-pagination',
+            },
+        });
+    </script>
+</body>
+
+</html>
